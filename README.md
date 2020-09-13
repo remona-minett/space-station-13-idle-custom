@@ -35,13 +35,11 @@ To prepare a local version of the game for testing, type the following:
 npm install
 ```
 
-To launch a hot-reloading copy of your repo, type the following:
+To launch a hot-reloading copy of your repo, type the following: (You will also only need to run this command on subsequent launches of the live edit page.)
 
 ```
 npm run serve
 ```
-
-You will also only need to run this command on subsequent launches of the live edit page.
 
 ### Deploy To Github
 
