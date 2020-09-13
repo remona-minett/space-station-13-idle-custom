@@ -10,7 +10,7 @@ If you want to contribute anyway, pull requests are open!
 
 ___
 
-## Setup and Deployal
+## Setup and Deployment
 
 ### Prerequsites
 
@@ -24,7 +24,7 @@ To install Vue CLI, type the following into Git Bash:
 npm install -g @vue/cli
 ```
 
-If it appears frozen, let it run. It can take from minutes to tens of minutes, depending on your system.
+If it appears frozen, let it run. It can take from just a minute to tens of minutes, depending on your system.
 
 
 ### Project setup
@@ -52,7 +52,7 @@ Then, run the following to deploy to the `gh-pages` branch of your repo.
 ```
 ./deployGit.sh
 ```
-! This requires admin access to the repository in the file.
+! This requires admin access to the repository in your `deployGit.sh` file.
 
 ### Deploy to AWS
 ```
