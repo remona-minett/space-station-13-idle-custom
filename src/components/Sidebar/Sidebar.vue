@@ -4,9 +4,9 @@
     <div class="sidebar-content">
       <div class="sidebar-title p-3 mb-2">
         <img class="no-pixel" src="@/assets/art/misc/logo.png" alt />
-        <span>SS13 Idle</span>
+        <span>CS13 Idle</span>
       </div>
-      <p class="items-header">{{version}}</p>
+      <p class="items-header">{{version}} b1</p>
 
       <sidebar-item id="shop" text="Cargo" :icon="require('@/assets/art/sidebar/cargo.png')">
         <div>

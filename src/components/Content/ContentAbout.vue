@@ -24,23 +24,22 @@
             <p>
               If you want to contribute, head on down to the project's
               <a
-                href="https://github.com/TBartl/space-station-13-idle/"
+                href="https://github.com/remona-minett/space-station-13-idle-custom/"
               >
                 <img class="no-pixel mx--1" :src="require('@/assets/art/misc/github.png')" />
                 <b>GitHub Repository</b>
               </a> (no programming experience is required).
             </p>
-            <p>
-              Also, check out our
-              <a href="https://discord.gg/HwbK9XQ">
-                <img class="no-pixel mx--1" :src="require('@/assets/art/misc/discord.png')" />
-                <b>Discord Server</b>
-              </a>.
-            </p>
           </div>
           <div class="content-block mt-3">
             <h4 class="mb-3">Credits</h4>
-            <h5>Developers</h5>
+            <h5>Custom Station Idle Developers</h5>
+            <div class="my-3">
+              <img class="mx--0" :src="require('@/assets/art/combat/enemies/missing.png')" />
+              <b class="mr-2">Remona Minett:</b>
+              <span>Custom programming, content, balance</span>
+            </div>
+            <h5>Space Station Idle Developers</h5>
             <div class="my-3">
               <img class="mx--0" :src="require('@/assets/art/jobinfo/fabrication.png')" alt />
               <b class="mr-2">Thomas "Tabski" Bartlett:</b>
@@ -75,7 +74,7 @@
             <div class="my-3">
               <img class="mx--0" :src="require('@/assets/art/combat/enemies/bald_visitor.png')" alt />
               <b class="mr-2">"Jerry Derpington":</b>
-              <span>First Playtester</span>
+              <span>First Playtester (SSIdle)</span>
             </div>
             <div class="my-3">
               <img class="mx--0" :src="require('@/assets/art/misc/clark.png')" alt />
@@ -86,7 +85,7 @@
               <b class="mr-2">Armhulen,</b> and
               <img class="mx--0" :src="require('@/assets/art/misc/berry.png')" alt />
               <b class="mr-2">Sunberry:</b>
-              <span>Second Round Playtesters</span>
+              <span>Second Round Playtesters (SSIdle)</span>
             </div>
           </div>
         </div>
