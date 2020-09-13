@@ -58,7 +58,7 @@
                   class="custom-control-input"
                   id="darkMode"
                 />
-                <label class="custom-control-label" for="darkMode">Dark Mode [EXPERIMENTAL!]</label>
+                <label class="custom-control-label" for="darkMode">Dark Mode (Beta)</label>
               </div>
             </div>
 
@@ -347,7 +347,7 @@ export default {
       let el = document.createElement("a");
       let url = URL.createObjectURL(file);
       el.href = url;
-      el.download = "SpaceStationIdleSave.json";
+      el.download = "CustomStationIdleSave.json";
       document.body.appendChild(el);
       el.click();
       setTimeout(function() {
