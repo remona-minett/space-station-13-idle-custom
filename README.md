@@ -14,9 +14,9 @@ ___
 
 ### Prerequsites
 
-You will need Git Bash as well as having Node.js installed.
+You will need Git Bash as well as Node.js installed.
 
-If you do not already have Vuc CLI installed, continue reading, otherwise skip to the next header.
+If you do not already have Vue CLI installed, continue reading, otherwise skip to the next header.
 
 To install Vue CLI, type the following into Git Bash:
 
