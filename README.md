@@ -1,36 +1,64 @@
-# Space Station Idle
+# Space Station Idle Custom
 
 Space Station Idle is a web-based idle game based on Melvor Idle, and set in the Space Station 13 universe.
 
-This repository has not been set up well for community contribution. In addition there's very little public documentation on implementation right now...
+This "Custom" version is a fork of Space Station Idle, created and maintained by Remona. (Remona#1111 on Discord). Do not contact the developers of Space Station Idle for help with this version.
 
-BUT, if you want to contribute anyway, pull requests are open!
+There's very little public documentation on implementation right now.
+
+If you want to contribute anyway, pull requests are open!
 
 ___
 
 ## Setup and Deployal
 
+### Prerequsites
+
+You will need Git Bash as well as having Node.js installed.
+
+If you do not already have Vuc CLI installed, continue reading, otherwise skip to the next header.
+
+To install Vue CLI, type the following into Git Bash:
+
+```
+npm install -g @vue/cli
+```
+
+If it appears frozen, let it run. It can take from minutes to tens of minutes, depending on your system.
+
+
 ### Project setup
+
+To prepare a local version of the game for testing, type the following:
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+To launch a hot-reloading copy of your repo, type the following:
+
 ```
 npm run serve
 ```
 
+You will also only need to run this command on subsequent launches of the live edit page.
+
 ### Deploy To Github
+
+First, edit `deployGit.sh` as well as `vue.config.js` with your repo address (You will only need to edit `vue.config.js` if you modify the name of the repo, such as cloning vs forking.)
+
+Then, run the following to deploy to the `gh-pages` branch of your repo.
+
 ```
 ./deployGit.sh
 ```
-! Requires admin access to the repository
+! This requires admin access to the repository in the file.
 
 ### Deploy to AWS
 ```
 ./deployAws.sh
 ```
-! Requires signed in AWS account, `aws configure`
+! Requires a signed in AWS account, `aws configure`
 
 ___
 
