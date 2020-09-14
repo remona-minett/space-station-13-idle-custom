@@ -1,2 +1,3 @@
 - Now unobtainable: Mech Mounted Teleporter
 - Now unobtainable: Elusive Positronic Upgrade - replaced.
+- The popup is now actually "dark" in dark mode.

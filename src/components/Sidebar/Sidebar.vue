@@ -76,8 +76,8 @@
       />
       <sidebar-item id="settings" text="Settings" :icon="require('@/assets/art/sidebar/gear.png')" />
       <sidebar-item id="about" text="About" :icon="require('@/assets/art/misc/logo-square.png')" />
-      <a class href="https://discord.gg/HwbK9XQ" target="_blank">
-        <sidebar-item text="Discord" :icon="require('@/assets/art/misc/discord.png')" />
+      <a class href="https://twitter.com/CS13Idle" target="_blank">
+        <sidebar-item text="CS13Idle on Twitter" :icon="require('@/assets/art/misc/twitter.png')" />
       </a>
     </div>
     <img

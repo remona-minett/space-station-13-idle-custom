@@ -7,22 +7,29 @@
     :customClass="$store.getters['settings/darkModeClass']"
   >
     <div class="popup d-flex flex-column align-items-center">
-      <h6 class="title">{{item.name}}</h6>
+      <h6 class="dark-mode title">{{item.name}}</h6>
+      <div v-if="item.rarity == 'common'" style="color:gray;">Common</div>
+      <div v-else-if="item.rarity == 'uncommon'" style="color:green;">Uncommon</div>
+      <div v-else-if="item.rarity == 'rare'" style="color:deepskyblue;">Rare</div>
+      <div v-else-if="item.rarity == 'epic'" style="color:darkviolet;">Epic</div>
+      <div v-else-if="item.rarity == 'legendary'" style="color:orange;"><i>Legendary</i></div>
+      <div v-else-if="item.rarity == 'unique'" style="color:red;"><b><i>Unique</i></b></div>
       <div class="d-flex align-items-center mt-1" v-if="item.equipmentSlot">
         <img class="equippable-icon" :src="require(`@/assets/art/combat/equipment/${item.equipmentSlot}.png`)" alt="" />
         <span class="equippable-name d-md-block text-uppercase ml-1">{{item.equipmentSlot}}</span>
       </div>
       <span v-if="item.healAmount" class="mt-1">Heals +{{item.healAmount}} HP</span>
-      <div
+      <template style="display:inline-block;">
+      <span
+        style="display: inline-block;"
         class="requirement p-1 mt-1 rounded d-flex flex-row align-items-center"
         :class="requirement.class"
         v-for="(requirement, index) in requirements"
         :key="'req'+index"
       >
-        <span>Requires:</span>
-        <img class="mx-1" :src="requirement.icon" alt />
-        <span>{{requirement.text}}</span>
-      </div>
+        Requires: <img class="mx-1" :src="requirement.icon" alt /> {{requirement.text}}
+      </span>
+      </template>
       <span
         v-for="(allow, index) in allows"
         :key="'allow'+index"
@@ -47,7 +54,7 @@
         class="description mt-1"
         v-if="item.fleeChance"
       >{{item.fleeChance}}% base chance to flee whenever you get hit</span>
-      <stats-panel class="mt-1" v-if="item.stats" :stats="item.stats" />
+      <stats-panel class="dark-mode stats mt-1" v-if="item.stats" :stats="item.stats" />
       <inventory-price-display v-if="item.sellPrice" class="mt-1" :price="item.sellPrice" />
     </div>
   </b-popover>
@@ -83,7 +90,7 @@ export default {
         let jobLevel = this.$store.getters[jobId + "/level"];
         return {
           icon: job.icon,
-          text: "lvl" + requiredLevel,
+          text: "Lv" + requiredLevel,
           class: jobLevel >= requiredLevel ? "alert-success" : "alert-danger"
         };
       });
@@ -116,9 +123,27 @@ export default {
 .requirement {
   font-size: 14px;
 }
+
 .requirement img {
   width: 32px;
 }
+
+.stats {
+  color:black;
+}
+
+.title {
+  color:black;
+}
+
+.dark-mode .stats {
+  color:white;
+}
+
+.dark-mode .title {
+  color:white;
+}
+
 .description {
   max-width: 200px;
   text-align: center;

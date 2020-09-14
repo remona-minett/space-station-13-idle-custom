@@ -195,6 +195,14 @@ const ASSAULTMECHS = {
 	},
 }
 
+const MECH_WEAPONS = {
+
+}
+
+const MECH_ATTACH = {
+
+}
+
 const ENERGY_AMMO = {
 	fabricateEammo1: {
 		time: 4,
@@ -382,6 +390,8 @@ Object.values(BALLISTIC_GUNS).forEach(action => action.type = "ballistic guns");
 Object.values(ENERGY_GUNS).forEach(action => action.type = "energy guns");
 Object.values(MECHS).forEach(action => action.type = "MECHANIZED EXOSUITs");
 Object.values(ASSAULTMECHS).forEach(action => action.type = "ASSAULT MECHANIZED EXOSUITs");
+Object.values(MECH_WEAPONS).forEach(action => action.type = "EXOSUIT WEAPONS");
+Object.values(MECH_ATTACH).forEach(action => action.type = "EXOSUIT ATTACHMENTS");
 
 const ACTIONS = {
 	...BALLISTIC_AMMO,
@@ -389,13 +399,15 @@ const ACTIONS = {
 	...BALLISTIC_GUNS,
 	...ENERGY_GUNS,
 	...MECHS,
-	...ASSAULTMECHS
+	...ASSAULTMECHS,
+	...MECH_WEAPONS,
+	...MECH_ATTACH
 }
 for (let action of Object.values(ACTIONS)) {
-	let multiplyer = 1;
-	if (action.type == "ballistic ammo" || action.type == "energy ammo") multiplyer = .5;
-	if (action.type == "mechs") multiplyer = 10;
-	action.requiredItems['power'] = Math.max(1, Math.round(action.requiredLevel * multiplyer));
+	let multiplier = 1;
+	if (action.type == "ballistic ammo" || action.type == "energy ammo") multiplier = .5;
+	if (action.type == "mechs") multiplier = 10;
+	action.requiredItems['power'] = Math.max(1, Math.round(action.requiredLevel * multiplier));
 }
 export { ACTIONS };
 
