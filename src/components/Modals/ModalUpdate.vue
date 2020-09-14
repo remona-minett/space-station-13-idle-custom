@@ -1,10 +1,8 @@
 <template>
   <div class="d-flex flex-column align-items-center m-3 text-center">
-    <h3 class="text-center mb-3">CS13Idle 1.0 Released!</h3>
+    <h3 class="text-center mb-3">Welcome to CS13Idle Beta!</h3>
 
-    Not really. This is a test label. If I somehow didn't change this, the hell am I doing? smh.
-
-    <img :src="require('@/assets/art/misc/clown.png')" />
+    <p>Keep in mind that this is a beta version and parts of this might change as time goes on. The goal is to be 100% incoming save-file compatible from SSIdle, but this may change in the future. Have fun!</p>
 
     <button class="btn btn-primary mt-3" @click="confirmationClicked">Close</button>
   </div>
