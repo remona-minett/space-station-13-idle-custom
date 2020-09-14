@@ -13,6 +13,7 @@ import RESOURCE_CARGONIA from "./items/resourceCargonia";
 import RESOURCE_TRAITOR from "./items/resourceTraitor";
 import RESOURCE_CULT from "./items/resourceCult";
 import RESOURCE_LING from "./items/resourceLing";
+import RESOURCE_MECH from "./items/resourceMech";
 import SHOP from "./items/shop";
 import CHRONO from "./items/chrono";
 import SLOT_CHEST from "./items/slotChest";
@@ -43,6 +44,7 @@ const ITEMS = {
 	...RESOURCE_TRAITOR,
 	...RESOURCE_CULT,
 	...RESOURCE_LING,
+	...RESOURCE_MECH,
 	...SLOT_FACE,
 	...SLOT_HEAD,
 	...SLOT_NECK,

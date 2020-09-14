@@ -23,13 +23,19 @@
               <b> Space Station 13</b></a> universe.
             </p>
             <p>This game is 100% free and open source (AGPL-3.0 License).</p>
+            
+          </div>
+          <div class="content-block mt-3">
+            <h4 class="mb-2">Links</h4>
             <p>
-              If you want to contribute, head on down to the project's
+              <a href="https://twitter.com/CS13Idle"><img class="no-pixel mx--1" :src="require('@/assets/art/misc/twitter.png')" />
+              <b> CS13Idle Twitter</b></a>
+            </p><p>
               <a
                 href="https://github.com/remona-minett/space-station-13-idle-custom/"
               >
                 <img class="no-pixel mx--1" :src="require('@/assets/art/misc/github.png')" />
-                <b> GitHub Repository</b></a>!
+                <b> GitHub Repository</b></a> - If you want, please contribute!
             </p>
           </div>
           <div class="content-block mt-3">

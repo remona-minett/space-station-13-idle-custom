@@ -148,7 +148,7 @@ export default {
 	// 		evasion: 2
 	// 	}
 	// },
-	// mechGunCanno: {
+	// mechGunCanno: { // see resourceMech.js @ ./
 	// 	name: "Mounted Cannon",
 	// 	sellPrice: 0,
 	// 	equipmentSlot: "pocket",
