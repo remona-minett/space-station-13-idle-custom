@@ -11,25 +11,26 @@
       <div v-if="item.rarity == 'common'" style="color:gray;">Common</div>
       <div v-else-if="item.rarity == 'uncommon'" style="color:green;">Uncommon</div>
       <div v-else-if="item.rarity == 'rare'" style="color:deepskyblue;">Rare</div>
-      <div v-else-if="item.rarity == 'epic'" style="color:darkviolet;">Epic</div>
+      <div v-else-if="item.rarity == 'epic'" style="color:violet;">Epic</div>
       <div v-else-if="item.rarity == 'legendary'" style="color:orange;"><i>Legendary</i></div>
       <div v-else-if="item.rarity == 'unique'" style="color:red;"><b><i>Unique</i></b></div>
       <div class="d-flex align-items-center mt-1" v-if="item.equipmentSlot">
         <img class="equippable-icon" :src="require(`@/assets/art/combat/equipment/${item.equipmentSlot}.png`)" alt="" />
         <span class="equippable-name d-md-block text-uppercase ml-1">{{item.equipmentSlot}}</span>
       </div>
-      <span v-if="item.healAmount" class="mt-1">Heals +{{item.healAmount}} HP</span>
-      <template style="display:inline-block;">
-      <span
-        style="display: inline-block;"
-        class="requirement p-1 mt-1 rounded d-flex flex-row align-items-center"
+      <span v-if="item.healAmount" class="mt-1 dark-mode greytext">Heals +{{item.healAmount}} HP</span>
+      <span class="dark-mode plaintext">Requires:</span>
+      <div class="requires d-flex flex-row align-items-center flex-wrap">
+      <div
+        class="requirement p-1 t-1 d-flex flex-row align-items-center"
         :class="requirement.class"
         v-for="(requirement, index) in requirements"
         :key="'req'+index"
       >
-        Requires: <img class="mx-1" :src="requirement.icon" alt /> {{requirement.text}}
-      </span>
-      </template>
+      <img class="mx-1" :src="requirement.icon" alt />
+      <span>{{requirement.text}}</span> 
+      </div>
+      </div>
       <span
         v-for="(allow, index) in allows"
         :key="'allow'+index"
@@ -55,7 +56,7 @@
         v-if="item.fleeChance"
       >{{item.fleeChance}}% base chance to flee whenever you get hit</span>
       <stats-panel class="dark-mode stats mt-1" v-if="item.stats" :stats="item.stats" />
-      <inventory-price-display v-if="item.sellPrice" class="mt-1" :price="item.sellPrice" />
+      <inventory-price-display v-if="item.sellPrice" class="mt-1 dark-mode plaintext" :price="item.sellPrice" />
     </div>
   </b-popover>
 </template>
@@ -128,20 +129,21 @@ export default {
   width: 32px;
 }
 
-.stats {
+.stats,
+.title,
+.plaintext,
+.greytext /* greytext is it's darkmode color - just needs a default here. */ {
   color:black;
 }
 
-.title {
-  color:black;
-}
-
-.dark-mode .stats {
+.dark-mode .stats,
+.dark-mode .title,
+.dark-mode .plaintext {
   color:white;
 }
 
-.dark-mode .title {
-  color:white;
+.dark-mode .greytext {
+  color:rgb(177, 177, 177);
 }
 
 .description {

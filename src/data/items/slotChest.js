@@ -321,6 +321,7 @@ const ASSAULTMECHS = {
 	phazon: {
 		name: "Phazon",
 		sellPrice: 73350,
+		rarity: "epic",
 		icon: require("@/assets/art/fabrication/mechphazon.png"),
 		stats: {
 		},

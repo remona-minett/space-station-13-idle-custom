@@ -57,7 +57,7 @@
         :icon="require('@/assets/art/combat/luck.png')"
         :value="fixedStats.luck"
         :showPercent="true"
-      />
+      /> <!-- Remove this later. todo, removeme-->
       <div
         v-if="stats.damageType"
         :id="id+'-damage-type'"
