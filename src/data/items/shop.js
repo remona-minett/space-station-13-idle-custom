@@ -559,10 +559,6 @@ export default {
 				weight: 15
 			},
 			{
-				id: 'mechSpecial1',
-				weight: 10
-			},
-			{
 				id: 'companionPositronic',
 				weight: 10
 			},
