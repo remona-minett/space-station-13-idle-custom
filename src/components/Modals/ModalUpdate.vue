@@ -1,16 +1,11 @@
 <template>
   <div class="d-flex flex-column align-items-center m-3 text-center">
-    <h3 class="text-center mb-3">Update 1.3 Released!</h3>
+    <h3 class="text-center mb-3">CS13Idle 1.0 Released!</h3>
 
-    <img :src="require('@/assets/art/misc/changelog3.png')" />
+    Not really. This is a test label. If I somehow didn't change this, the hell am I doing? smh.
 
-    <span
-      class="my-3"
-    >Full changelog of features, balance changes, and more are available on the Discord:</span>
+    <img :src="require('@/assets/art/misc/clown.png')" />
 
-    <a class="discord" href="https://discord.gg/HwbK9XQ" target="_blank">
-      <img :src="require('@/assets/art/misc/fake_discord.png')" />
-    </a>
     <button class="btn btn-primary mt-3" @click="confirmationClicked">Close</button>
   </div>
 </template>

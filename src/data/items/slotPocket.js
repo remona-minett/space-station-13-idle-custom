@@ -148,16 +148,4 @@ export default {
 	// 		evasion: 2
 	// 	}
 	// },
-	// mechGunCanno: { // see resourceMech.js @ ./
-	// 	name: "Mounted Cannon",
-	// 	sellPrice: 0,
-	// 	equipmentSlot: "pocket",
-	// 	icon: require("@/assets/art/engineering/gunbig.png")
-	// },
-	// cannonAmmo: {
-	// 	name: "Cannon Ammo",
-	// 	sellPrice: 0,
-	// 	equipmentSlot: "pocket",
-	// 	icon: require("@/assets/art/engineering/ammobig.png")
-	// },
 }

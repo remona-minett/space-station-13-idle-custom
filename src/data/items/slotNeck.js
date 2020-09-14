@@ -263,7 +263,7 @@ export default {
 			evasion: 30
 		},
 	},
-	mechSpecial1: {
+	mechSpecial1: { // unobtainable - only for ssidle compat.
 		name: "Mech Mounted Teleporter",
 		restrictions: ["mech"],
 		sellPrice: 2500,

@@ -278,7 +278,7 @@ const SLIMES = {
 			evasion: -5,
 		}
 	},
-	companionPositronic: {
+	companionPositronic: { // unobtainable - only for ssidle compat.
 		name: "Elusive Positronic Upgrade",
 		restrictions: ["mech"],
 		sellPrice: 5757,
