@@ -354,6 +354,31 @@ const SLIMES = {
 			regen: -1
 		}
 	},
+	companionRepairDrone: {
+		name: "Exosuit Repair Drone",
+		sellPrice: 1000,
+		restrictions: ["mech"],
+		rarity: "uncommon",
+		icon: require("@/assets/art/mech/mechRepair.png"),
+		tier: 2,
+		stats: {
+			protection: 5,
+			regen: 0.5,
+			evasion: -2
+		}
+	},
+	companionMechThrusters: {
+		name: "Exosuit Thruster Module",
+		sellPrice: 36300,
+		restrictions: ["mech"],
+		rarity: "rare",
+		icon: require("@/assets/art/mech/mechThrusters.png"),
+		tier: 3,
+		stats: {
+			protection: -4,
+			evasion: 25
+		}
+	}
 }
 Object.values(SLIMES).forEach((slime, index) => {
 	slime.equipmentSlot = "companion";

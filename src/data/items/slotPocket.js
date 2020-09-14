@@ -137,8 +137,7 @@ export default {
 		stats: {
 			power: 15,
 			precision: 35
-		}
-	}
+		},
 	// pocketPDA1: {
 	// 	name: "Personal Digital Assistant",
 	// 	sellPrice: 5252,
@@ -148,4 +147,5 @@ export default {
 	// 		evasion: 2
 	// 	}
 	// },
+	}
 }

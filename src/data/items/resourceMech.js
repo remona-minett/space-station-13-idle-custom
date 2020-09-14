@@ -1,4 +1,4 @@
-export default // Mech weapons and items here
+export default // Non-slot mech stuff here.
 {
-    
+
 }

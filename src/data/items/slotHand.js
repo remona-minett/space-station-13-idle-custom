@@ -911,6 +911,86 @@ const GBULLET = {
 			rangedPower: 50
 		}
 	},
+	mechBrute1: {
+		name: "Exosuit Mousetrap Launcher",
+		sellPrice: 2000,
+		equipmentSlot: "hand",
+		restrictions: ["mech"],
+		rarity: "common",
+		icon: require("@/assets/art/mech/mechMousetrapMortar.png"),
+		// overlay: ? - being excluded because it would look very weird. can probably put it on the ground?
+		stats: {
+			attackSpeed: 7,
+			power: 3,
+		},
+		requires: {
+			fabrication: 7
+		}
+	},
+	mechBrute2: {
+		name: "Exosuit Grenade Launcher",
+		sellPrice: 12800,
+		equipmentSlot: "hand",
+		restrictions: ["mech"],
+		rarity: "common",
+		icon: require("@/assets/art/mech/mechGrenadeLauncher.png"),
+		stats: {
+			attackSpeed: 6,
+			power: 6
+		},
+		requires: {
+			fabrication: 19
+		}
+	},
+	mechBrute3: {
+		name: "Exosuit Shotgun",
+		sellPrice: 17200,
+		equipmentSlot: "hand",
+		restrictions: ["mech"],
+		rarity: "uncommon",
+		icon: require("@/assets/art/mech/mechShotgun.png"),
+		stats: {
+			attackSpeed: 6,
+			power: 10
+		},
+		requires: {
+			fabrication: 25,
+			precision: 5
+		}
+	},
+	mechBrute4: {
+		name: "Exosuit Assault Rifle",
+		sellPrice: 35000,
+		equipmentSlot: "hand",
+		restrictions: ["mech"],
+		rarity: "rare",
+		icon: require("@/assets/art/mech/mechAssaultRifle.png"),
+		stats: {
+			attackSpeed: 2,
+			power: 15
+		},
+		requires: {
+			fabrication: 38,
+			precision: 25
+		}
+	},
+	mechBrute5: {
+		name: "Exosuit Sniper Rifle",
+		sellPrice: 74000,
+		equipmentSlot: "hand",
+		restrictions: ["mech"],
+		rarity: "epic",
+		icon: require("@/assets/art/mech/mechSniperRifle.png"),
+		stats: {
+			evasion: -10,
+			attackSpeed: 10,
+			power: 30
+		},
+		requires: {
+			fabrication: 50,
+			precision: 40
+		}
+	}
 }
 const LINGBRUTE = {
 	lingBrute1: {

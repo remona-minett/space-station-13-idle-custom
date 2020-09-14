@@ -129,7 +129,7 @@ const MECHS = {
 		name: "R.I.P.L.E.Y.",
 		sellPrice: 6060,
 		icon: require("@/assets/art/fabrication/mechripley.png"),
-		overlay: require("@/assets/art/fabrication/mechripley.png"),
+		overlay: require("@/assets/art/fabrication/mechripley.png"), // is this needed still?
 		stats: {
 		},
 		requires: {
@@ -335,7 +335,8 @@ const SPECIALARMOR = {
 		name: "Xenobiology Enhanced Armor",
 		equipmentSlot: "chest",
 		sellPrice: 170,
-		icon: require("@/assets/art/combat/items/arm_u1.png"), overlay: require("@/assets/art/combat/items/arm_u1_overlay.png"),
+		icon: require("@/assets/art/combat/items/arm_u1.png"), 
+		overlay: require("@/assets/art/combat/items/arm_u1_overlay.png"),
 		stats: {
 			maxHealth: 150,
 			evasion: -5,

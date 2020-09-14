@@ -1,19 +1,19 @@
 <template>
   <b-popover :target="target" triggers="hover" placement="right" delay="0" :customClass="$store.getters['settings/darkModeClass']">
-    <p>PRECISION: {{stats.precision | stat}}</p>
-    <p>TARGET_EVASION: {{targetStats.evasion | stat}}</p>
-    <p>INTERVAL: {{hitSigma | stat}}</p>
+    <p class="dark-mode text">PRECISION: {{stats.precision | stat}}</p>
+    <p class="dark-mode text">TARGET_EVASION: {{targetStats.evasion | stat}}</p>
+    <p class="dark-mode text">INTERVAL: {{hitSigma | stat}}</p>
     <br />
-    <p>DIFF = PRECISION - TARGET_EVASION</p>
-    <p class="pl-3">= {{stats.precision | stat}} - {{targetStats.evasion | stat}}</p>
-    <p class="pl-3">= {{hitDiff | stat}}</p>
+    <p class="dark-mode text">DIFF = PRECISION - TARGET_EVASION</p>
+    <p class="pl-3 dark-mode text">= {{stats.precision | stat}} - {{targetStats.evasion | stat}}</p>
+    <p class="pl-3 dark-mode text">= {{hitDiff | stat}}</p>
     <br />
-		<p>SIGMA = DIFF / INTERVAL</p>
-    <p class="pl-3">= {{(hitDiff / hitSigma) | stat}}</p>
+		<p class="dark-mode text">SIGMA = DIFF / INTERVAL</p>
+    <p class="pl-3 dark-mode text">= {{(hitDiff / hitSigma) | stat}}</p>
 		<br />
-    <p>HIT_CHANCE = zTest(SIGMA)</p>
-    <p class="pl-3">= zTest({{hitDiff | stat}} / {{hitSigma | stat}})</p>
-    <p class="pl-3">= {{(hitChance*100).toFixed(1)}}%</p>
+    <p class="dark-mode text">HIT_CHANCE = zTest(SIGMA)</p>
+    <p class="pl-3 dark-mode text">= zTest({{hitDiff | stat}} / {{hitSigma | stat}})</p>
+    <p class="pl-3 dark-mode text">= {{(hitChance*100).toFixed(1)}}%</p>
 		<img class="w-100 curve" :src="curve" alt="">
   </b-popover>
 </template>
@@ -64,9 +64,19 @@ export default {
 </script>
 
 <style scoped>
+
+.text {
+  color:black;
+}
+
+.dark-mode .text {
+  color:white;
+}
+
 /* Set the size ahead of time so we don't get screwed by the loading+modal wombo combo */
 .curve{
 	width: 256px;
 	height: 137px;
 }
+
 </style>

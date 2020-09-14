@@ -1,24 +1,24 @@
 <template>
   <b-popover :target="target" triggers="hover" placement="right" delay="0" :customClass="$store.getters['settings/darkModeClass']">
-    <p>BASE_DPS: {{baseDps | stat}}</p>
-    <p>POWER_RATIO: {{powerRatio | stat}}</p>
+    <p class="dark-mode text">BASE_DPS: {{baseDps | stat}}</p>
+    <p class="dark-mode text">POWER_RATIO: {{powerRatio | stat}}</p>
 		<br>
-    <p>power: {{stats.power | stat}}</p>
-    <p>atkSpeed: {{stats.attackSpeed | stat}}</p>
-    <p>luck: {{stats.luck | stat}}%</p>
-    <p v-if="targetProtection">targetProtection: {{targetProtection}}%</p>
+    <p class="dark-mode text">power: {{stats.power | stat}}</p>
+    <p class="dark-mode text">atkSpeed: {{stats.attackSpeed | stat}}</p>
+    <p class="dark-mode text">luck: {{stats.luck | stat}}%</p>
+    <p class="dark-mode text" v-if="targetProtection">targetProtection: {{targetProtection}}%</p>
     <br />
-    <p>dps = BASE_DPS + POWER_RATIO * power</p>
-    <p class="pl-3">= {{baseDps | stat}} + {{powerRatio | stat}} * {{stats.power | stat}}</p>
-    <p class="pl-3">= {{dps | stat}}</p>
+    <p class="dark-mode text">dps = BASE_DPS + POWER_RATIO * power</p>
+    <p class="pl-3 dark-mode text">= {{baseDps | stat}} + {{powerRatio | stat}} * {{stats.power | stat}}</p>
+    <p class="pl-3 dark-mode text">= {{dps | stat}}</p>
     <br />
-    <p>maxHit = dps * atkSpeed{{targetProtection ? " * (1-targetProtection)" : ""}}</p>
-    <p class="pl-3">= {{dps | stat}} * {{stats.attackSpeed | stat}}{{targetProtection ? " * (100%-"+targetProtection+"%)" : ""}}</p>
-    <p class="pl-3">= {{maxHit | stat}}</p>
+    <p class="dark-mode text">maxHit = dps * atkSpeed{{targetProtection ? " * (1-targetProtection)" : ""}}</p>
+    <p class="pl-3 dark-mode text">= {{dps | stat}} * {{stats.attackSpeed | stat}}{{targetProtection ? " * (100%-"+targetProtection+"%)" : ""}}</p>
+    <p class="pl-3 dark-mode text">= {{maxHit | stat}}</p>
     <br />
-    <p>minHit = maxHit * luck</p>
-    <p class="pl-3">= {{maxHit | stat}} * {{stats.luck}}%</p>
-    <p class="pl-3">= {{minHit | stat}}</p>
+    <p class="dark-mode text">minHit = maxHit * luck</p>
+    <p class="pl-3 dark-mode text">= {{maxHit | stat}} * {{stats.luck}}%</p>
+    <p class="pl-3 dark-mode text">= {{minHit | stat}}</p>
   </b-popover>
 </template>
 
@@ -52,4 +52,13 @@ export default {
 </script>
 
 <style scoped>
+
+.text {
+  color:black;
+}
+
+.dark-mode .text {
+  color:white;
+}
+
 </style>

@@ -9,7 +9,7 @@
     <div class="popup d-flex flex-column align-items-center">
       <h6 class="dark-mode title">{{item.name}}</h6>
       <div v-if="item.rarity == 'common'" style="color:gray;">Common</div>
-      <div v-else-if="item.rarity == 'uncommon'" style="color:green;">Uncommon</div>
+      <div v-else-if="item.rarity == 'uncommon'" style="color:lightgreen;">Uncommon</div>
       <div v-else-if="item.rarity == 'rare'" style="color:deepskyblue;">Rare</div>
       <div v-else-if="item.rarity == 'epic'" style="color:violet;">Epic</div>
       <div v-else-if="item.rarity == 'legendary'" style="color:orange;"><i>Legendary</i></div>
@@ -19,7 +19,7 @@
         <span class="equippable-name d-md-block text-uppercase ml-1">{{item.equipmentSlot}}</span>
       </div>
       <span v-if="item.healAmount" class="mt-1 dark-mode greytext">Heals +{{item.healAmount}} HP</span>
-      <span class="dark-mode plaintext">Requires:</span>
+      <span class="dark-mode plaintext" v-if="item.requires">Requires:</span>
       <div class="requires d-flex flex-row align-items-center flex-wrap">
       <div
         class="requirement p-1 t-1 d-flex flex-row align-items-center"

@@ -12,8 +12,8 @@
       :customClass="`${$store.getters['settings/darkModeClass']} no-pointer-events`"
     >
       <div class="d-flex flex-column align-items-center">
-        <h6>{{name}}</h6>
-        <span>{{description}}</span>
+        <h6 class="dark-mode text">{{name}}</h6>
+        <span class="dark-mdoe text2">{{description}}</span>
       </div>
     </b-popover>
   </div>
@@ -39,6 +39,19 @@ img {
   width: 32px;
 }
 
+.text,
+.text2 {
+  color:black;
+}
+
+.dark-mode .text {
+  color:white;
+}
+
+.dark-mode .text2 {
+  color:rgb(201, 201, 201);
+}
+
 .no-pointer-events {
   pointer-events: none;
 }
@@ -55,9 +68,11 @@ img {
   border: 1px solid rgba(160, 119, 119, 0.198) !important;
   background-color: rgba(185, 119, 119, 0.356) !important;
 }
+
 #app.dark-mode .positive {
   color: rgb(148, 212, 128) !important;
 }
+
 #app.dark-mode .negative {
   color: rgb(212, 128, 128) !important;
 }
