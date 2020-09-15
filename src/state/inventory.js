@@ -319,9 +319,8 @@ const inventory = {
 				purchase.onPurchase({ commit, dispatch });
 			}
 
-			if (purchase.fightZone) {
-				let zone = ZONES.find(z => z.name == purchase.fightZone);
-				let enemyId = zone.enemies[Math.floor(Math.random() * zone.enemies.length)];
+			if (purchase.enemyId) {
+				let enemyId = purchase.enemyId;
 				let keepLoot = rootGetters["combat/targetEnemy"] != null; // We were fighting a boss
 				dispatch("combat/startCombat", { enemyId, keepLoot }, { root: true });
 			}

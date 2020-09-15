@@ -997,6 +997,7 @@ const GBULLET = {
 		}
 	}
 }
+
 const LINGBRUTE = {
 	lingBrute1: {
 		name: "Armblade",

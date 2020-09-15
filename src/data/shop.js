@@ -462,7 +462,7 @@ const TICKETS = {
 		requiredItems: {
 			ticket10: 5,
 		},
-		fightZone: "Worker Strike"
+		enemyId: "rev2"
 	},
 	bossTicket1: {
 		name: "Appeal Improper Citation",
@@ -471,7 +471,7 @@ const TICKETS = {
 		requiredItems: {
 			ticket1: 5,
 		},
-		fightZone: "Brutal Security"
+		enemyId: "Brutal Security"
 	},
 	bossTicket2: {
 		name: "Book Planetary Travel",
@@ -480,7 +480,7 @@ const TICKETS = {
 		requiredItems: {
 			ticket2: 5,
 		},
-		fightZone: "Primordial Planet"
+		enemyId: "Primordial Planet"
 	},
 	bossTicket40: {
 		name: "Crack Cryptographic Code",
@@ -489,7 +489,7 @@ const TICKETS = {
 		requiredItems: {
 			ticket40: 5,
 		},
-		fightZone: "Syndicate Nuclear Assault Team"
+		enemyId: "Syndicate Nuclear Assault Team"
 	},
 	bossTicket3: {
 		name: "Investigate Occult Theory",
@@ -498,7 +498,7 @@ const TICKETS = {
 		requiredItems: {
 			ticket3: 5,
 		},
-		fightZone: "Bloodsworn Cultists"
+		enemyId: "Bloodsworn Cultists"
 	},
 	bossTicket55: {
 		name: "Check Nanotrasen Reports",
@@ -507,7 +507,7 @@ const TICKETS = {
 		requiredItems: {
 			ticket55: 5,
 		},
-		fightZone: "Rogue Nanotrasen Team"
+		enemyId: "Rogue Nanotrasen Team"
 	},
 	bossTicket60: {
 		name: "Schedule Celebrity Tour",
@@ -516,7 +516,7 @@ const TICKETS = {
 		requiredItems: {
 			ticket60: 5,
 		},
-		fightZone: "Wizard Federation 'Diplomats'"
+		enemyId: "Wizard Federation 'Diplomats'"
 	},
 	bossTicketReset: {
 		name: "Place bags of holdings inside each other",
@@ -527,8 +527,33 @@ const TICKETS = {
 			tomatoBluespace: 8,
 			slimeBluespace: 8
 		},
-		fightZone: "Tear in the Fabric of Reality"
+		enemyId: "Tear in the Fabric of Reality"
 	},
+	bossTicketDebug: {
+		name: "Fight Head of Cargo",
+		description: "On purchase, starts a fight head of cargo",
+		icon: require("@/assets/art/shop/items/ticket10.png"),
+		requiredItems: {
+			glass: 5,
+		},
+		enemyId: "rev1"
+	},
+	bossTicket393: {
+		name: "Fight Dude",
+		description: "",
+		icon: require("@/assets/art/combat/enemies/missing.png"),
+		requiredItems: {
+		},
+		enemyId: "rev3"
+	},
+	bossTicket399: {
+		name: "fiejw9eifjw",
+		icon: require("@/assets/art/combat/enemies/missing.png"),
+		requiredItems: {
+
+		},
+		enemyId: "rev4"
+	}
 }
 
 export const PURCHASES = {

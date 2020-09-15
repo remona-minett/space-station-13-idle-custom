@@ -21,7 +21,6 @@
     <div class="content-block content-block-bottom" v-if="expanded">
       <div v-if="zone.purchases">
         <hr class="mt-0 mb-2" />
-
         <div class="enemies">
           <shop-purchase
             v-for="(shopPurchase, purchaseIndex) in zone.purchases"

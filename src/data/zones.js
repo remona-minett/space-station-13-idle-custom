@@ -70,7 +70,7 @@ export default [
 		icon: require("@/assets/art/combat/zones/revolution.png"),
 		enemies: ["rev1", "rev2", "rev3", "rev4"],
 		boss: true,
-		purchases: ["bossTicket10"]
+		purchases: ["bossTicket10", "bossTicketDebug", "bossTicket393", "bossTicket399"]
 	},
 	{
 		name: "Brutal Security",

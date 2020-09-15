@@ -156,9 +156,27 @@ const combat = {
 				dispatch("_startMove");
 			}
 		},
-		startCombat({ dispatch, commit }, { enemyId, keepLoot }) {
+		startCombat({ dispatch, commit, getters, rootGetters }, { enemyId, keepLoot }) {
 			dispatch("cancelAllActions", {}, { root: true });
 			commit("_setTargetEnemy", enemyId);
+			let currentEnemyCost = ENEMIES[getters["targetEnemy"]].fightCost;
+			console.log("before if statement")
+			if (currentEnemyCost) {
+				console.log("if statement reached")
+				for (let [itemId, requiredCount] of Object.entries(currentEnemyCost)) {
+					let count = rootGetters["inventory/bank"][itemId];
+					count = count ? count : 0;
+					if (count < requiredCount) { 
+						commit("_setTargetEnemy", null); 
+						console.log("i die now")
+						return false; 
+					}
+				}
+				for (let [itemId, amountToRemove] of Object.entries(currentEnemyCost)) {
+					commit("inventory/changeItemCount", { itemId, count: -amountToRemove }, { root: true });
+				}
+			}
+			console.log("past if statement")
 			if (!keepLoot) commit("clearLoot");
 			dispatch("playerMob/startCombat", {}, { root: true });
 			dispatch("enemyMob/startCombat", {}, { root: true });
