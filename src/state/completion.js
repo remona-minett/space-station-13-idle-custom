@@ -41,7 +41,7 @@ const completion = {
 			}
 		},
 		itemPercent(state, getters) {
-			let itemsComplete = Object.keys(ITEMS).filter(itemId => getters.getItem(itemId)).length;
+			let itemsComplete = Object.keys(ITEMS).filter(itemId => getters.getItem(itemId)).nocomplete == false;
 			return Math.floor(100 * itemsComplete / Object.keys(ITEMS).length);
 		},
 		enemyPercent(state, getters) {
