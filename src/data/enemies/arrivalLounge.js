@@ -153,6 +153,7 @@ export default {
 		fightCost: {
 			glass: 5
 		},
+		boss: true,
 		stats: {
 			maxHealth: 36,
 			attackSpeed: 3,

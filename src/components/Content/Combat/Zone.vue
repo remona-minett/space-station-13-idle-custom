@@ -19,16 +19,7 @@
       </div>
     </div>
     <div class="content-block content-block-bottom" v-if="expanded">
-      <div v-if="zone.purchases">
-        <hr class="mt-0 mb-2" />
-        <div class="enemies">
-          <shop-purchase
-            v-for="(shopPurchase, purchaseIndex) in zone.purchases"
-            :key="purchaseIndex"
-            :purchaseId="shopPurchase"
-          />
-        </div>
-      </div>
+      <span style="text-align:center"><div v-if="zone.boss">Fighting an enemy in this zone costs 5x <img :src="zone.ticketIcon" style="width:32px; height:32px;" /> {{zone.ticketName}}</div></span>
       <hr class="mt-0 mb-2" />
       <div class="enemies">
         <zone-enemy
@@ -48,7 +39,7 @@ import ZoneEnemy from "@/components/Content/Combat/ZoneEnemy";
 import ShopPurchase from "@/components/Content/Shop/ShopPurchase";
 
 export default {
-  components: { ZoneEnemy, ShopPurchase },
+  components: { ZoneEnemy },
   props: ["zone"],
   data() {
     return {
@@ -93,6 +84,7 @@ img {
   width: 150px;
   height: 90px;
 }
+
 .zone-difficulty {
   font-size: 13px;
 }

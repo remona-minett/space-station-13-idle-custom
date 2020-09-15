@@ -43,7 +43,6 @@
         <item-chance :data="enemy" />
       </b-popover>
       <button
-        v-if="!restrictFight"
         type="button"
         class="btn btn-danger btn-sm w-100 mt-1"
         @click="fight"

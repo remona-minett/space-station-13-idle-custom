@@ -150,9 +150,9 @@ const combat = {
 		},
 		_resume({ state, dispatch, getters, rootGetters }) {
 			if (!state.targetEnemy) return;
-
+			let currentEnemyCost = ENEMIES[getters["targetEnemy"]].fightCost;
 			if (rootGetters["enemyMob/health"] == 0) {
-				if (ENEMIES[getters["targetEnemy"]].boss) return;
+				if (currentEnemyCost) return;
 				dispatch("_startMove");
 			}
 		},

@@ -2,7 +2,11 @@ export default [
 	{
 		name: "Arrival Lounge",
 		icon: require("@/assets/art/combat/zones/departures.png"),
-		enemies: ["janitor", "chaplain", "miner","playershop"]
+		ticketIcon: require("@/assets/art/combat/enemies/missing.png"),
+		ticketName: "Thiccboysss",
+		enemies: ["janitor", "chaplain", "miner","playershop"],
+		boss: true,
+		purchases: ["debugshit1"]
 	},
 	{
 		name: "Maintenance",

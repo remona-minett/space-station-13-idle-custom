@@ -553,6 +553,14 @@ const TICKETS = {
 
 		},
 		enemyId: "rev4"
+	},
+	debugshit1: {
+		name: "fiejw9eifjw",
+		icon: require("@/assets/art/combat/enemies/missing.png"),
+		requiredItems: {
+
+		},
+		enemyId: "playershop"
 	}
 }
 
