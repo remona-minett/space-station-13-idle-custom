@@ -6,7 +6,7 @@
         <img class="no-pixel" src="@/assets/art/misc/logo.png" alt />
         <span>CS13 Idle</span>
       </div>
-      <p class="items-header">{{version}}</p>
+      <p class="items-header">{{version}} Beta</p>
 
       <sidebar-item id="shop" text="Cargo" :icon="require('@/assets/art/sidebar/cargo.png')">
         <div>

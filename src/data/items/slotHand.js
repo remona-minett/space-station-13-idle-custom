@@ -917,6 +917,7 @@ const GBULLET = {
 		equipmentSlot: "hand",
 		restrictions: ["mech"],
 		rarity: "common",
+		nocomplete: true,
 		icon: require("@/assets/art/mech/mechMousetrapMortar.png"),
 		// overlay: ? - being excluded because it would look very weird. can probably put it on the ground?
 		stats: {
@@ -933,6 +934,7 @@ const GBULLET = {
 		equipmentSlot: "hand",
 		restrictions: ["mech"],
 		rarity: "common",
+		nocomplete: true,
 		icon: require("@/assets/art/mech/mechGrenadeLauncher.png"),
 		stats: {
 			attackSpeed: 6,
@@ -948,6 +950,7 @@ const GBULLET = {
 		equipmentSlot: "hand",
 		restrictions: ["mech"],
 		rarity: "uncommon",
+		nocomplete: true,
 		icon: require("@/assets/art/mech/mechShotgun.png"),
 		stats: {
 			attackSpeed: 6,
@@ -964,6 +967,7 @@ const GBULLET = {
 		equipmentSlot: "hand",
 		restrictions: ["mech"],
 		rarity: "rare",
+		nocomplete: true,
 		icon: require("@/assets/art/mech/mechAssaultRifle.png"),
 		stats: {
 			attackSpeed: 2,
@@ -980,6 +984,7 @@ const GBULLET = {
 		equipmentSlot: "hand",
 		restrictions: ["mech"],
 		rarity: "epic",
+		nocomplete: true,
 		icon: require("@/assets/art/mech/mechSniperRifle.png"),
 		stats: {
 			evasion: -10,

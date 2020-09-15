@@ -267,6 +267,7 @@ export default {
 		name: "Mech Mounted Teleporter",
 		restrictions: ["mech"],
 		sellPrice: 2500,
+		nocomplete: true,
 		icon: require("@/assets/art/fabrication/mecha_teleport.png"),
 		equipmentSlot: "neck",
 		stats: {
