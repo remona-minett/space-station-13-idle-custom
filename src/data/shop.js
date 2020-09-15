@@ -462,7 +462,7 @@ const TICKETS = {
 		requiredItems: {
 			ticket10: 5,
 		},
-		enemyId: "rev2"
+		enemyId: "Worker Strike"
 	},
 	bossTicket1: {
 		name: "Appeal Improper Citation",
@@ -529,6 +529,7 @@ const TICKETS = {
 		},
 		enemyId: "Tear in the Fabric of Reality"
 	},
+	/*
 	bossTicketDebug: {
 		name: "Fight Head of Cargo",
 		description: "On purchase, starts a fight head of cargo",
@@ -561,7 +562,7 @@ const TICKETS = {
 
 		},
 		enemyId: "playershop"
-	}
+	} */
 }
 
 export const PURCHASES = {

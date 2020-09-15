@@ -150,10 +150,6 @@ export default {
 	playershop: {
 		name: "Black Market Shopkeeper",
 		icon: require("@/assets/art/combat/enemies/shop.png"),
-		fightCost: {
-			glass: 5
-		},
-		boss: true,
 		stats: {
 			maxHealth: 36,
 			attackSpeed: 3,
