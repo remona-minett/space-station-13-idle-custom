@@ -68,9 +68,11 @@ export default [
 	{
 		name: "Worker Strike",
 		icon: require("@/assets/art/combat/zones/revolution.png"),
+		ticketIcon: require("@/assets/art/shop/items/ticket10.png"),
+		ticketName: "Proletariat Propaganda",
 		enemies: ["rev1", "rev2", "rev3", "rev4"],
 		boss: true,
-		purchases: ["bossTicket10", "bossTicketDebug", "bossTicket393", "bossTicket399"]
+		purchases: ["rev1ticket", "rev2ticket", "rev3ticket", "rev4ticket"]
 	},
 	{
 		name: "Brutal Security",

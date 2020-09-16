@@ -455,15 +455,6 @@ const CRATES = {
 }
 
 const TICKETS = {
-	bossTicket10: {
-		name: "Review Employment Contract",
-		description: "On purchase, starts a fight with a random boss in this zone.",
-		icon: require("@/assets/art/shop/items/ticket10.png"),
-		requiredItems: {
-			ticket10: 5,
-		},
-		enemyId: "Worker Strike"
-	},
 	bossTicket1: {
 		name: "Appeal Improper Citation",
 		description: "On purchase, starts a fight with a random boss in this zone.",
@@ -538,31 +529,43 @@ const TICKETS = {
 			glass: 5,
 		},
 		enemyId: "rev1"
-	},
-	bossTicket393: {
-		name: "Fight Dude",
-		description: "",
-		icon: require("@/assets/art/combat/enemies/missing.png"),
+	} */
+	rev1ticket: {
+		name: "Fight 'Head' of Cargo",
+		description: "Bother the 'Head' enough to lure him out of the safety of Cargo.",
+		icon: require("@/assets/art/combat/enemies/boss/rev1.png"),
 		requiredItems: {
+			ticket10: 5
+		},
+		enemyId: "rev1"
+	},
+	rev2ticket: {
+		name: "Fight New Chief Medical Officer",
+		description: "Fake an injury in front of the CMO to catch them off guard.",
+		icon: require("@/assets/art/combat/enemies/boss/rev2.png"),
+		requiredItems: {
+			ticket10: 5
+		},
+		enemyId: "rev2"
+	},
+	rev3ticket: {
+		name: "Fight IPC Research Director",
+		description: "Knock on the R&D glass until the RD comes to kick your ass.",
+		icon: require("@/assets/art/combat/enemies/boss/rev3_anim.gif"),
+		requiredItems: {
+			ticket10: 5
 		},
 		enemyId: "rev3"
 	},
-	bossTicket399: {
-		name: "fiejw9eifjw",
-		icon: require("@/assets/art/combat/enemies/missing.png"),
+	rev4ticket: {
+		name: "Fight Agent Provocateur",
+		description: "Talk trash on the radio until they come to throw you out an airlock.",
+		icon: require("@/assets/art/combat/enemies/boss/rev4.png"),
 		requiredItems: {
-
+			ticket10: 5
 		},
 		enemyId: "rev4"
-	},
-	debugshit1: {
-		name: "fiejw9eifjw",
-		icon: require("@/assets/art/combat/enemies/missing.png"),
-		requiredItems: {
-
-		},
-		enemyId: "playershop"
-	} */
+	}
 }
 
 export const PURCHASES = {

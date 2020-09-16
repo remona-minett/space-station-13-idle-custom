@@ -3,6 +3,10 @@ const BOSSES = {
 		name: "'Head' Of Cargo",
 		icon: require("@/assets/art/combat/enemies/boss/rev1.png"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket10: 5
+		},
 		stats: {
 			maxHealth: 300,
 			attackSpeed: 2.0,
@@ -51,6 +55,10 @@ const BOSSES = {
 		name: "New Chief Medical Officer",
 		icon: require("@/assets/art/combat/enemies/boss/rev2.png"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket10: 5
+		},
 		stats: {
 			maxHealth: 300,
 			attackSpeed: 2.1,
@@ -99,6 +107,10 @@ const BOSSES = {
 		name: "IPC Research Director",
 		icon: require("@/assets/art/combat/enemies/boss/rev3_anim.gif"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket10: 5
+		},
 		stats: {
 			maxHealth: 300,
 			attackSpeed: 4,
@@ -147,6 +159,10 @@ const BOSSES = {
 		name: "Agent Provocateur",
 		icon: require("@/assets/art/combat/enemies/boss/rev4.png"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket10: 5
+		},
 		stats: {
 			maxHealth: 300,
 			attackSpeed: 2.4,
