@@ -455,81 +455,16 @@ const CRATES = {
 }
 
 const TICKETS = {
-	bossTicket1: {
-		name: "Appeal Improper Citation",
-		description: "On purchase, starts a fight with a random boss in this zone.",
-		icon: require("@/assets/art/shop/items/ticket20.png"),
-		requiredItems: {
-			ticket1: 5,
-		},
-		enemyId: "Brutal Security"
-	},
-	bossTicket2: {
-		name: "Book Planetary Travel",
-		description: "On purchase, starts a fight with a random boss in this zone.",
-		icon: require("@/assets/art/shop/items/ticket30.png"),
-		requiredItems: {
-			ticket2: 5,
-		},
-		enemyId: "Primordial Planet"
-	},
-	bossTicket40: {
-		name: "Crack Cryptographic Code",
-		description: "On purchase, starts a fight with a random boss in this zone.",
-		icon: require("@/assets/art/shop/items/ticket40.png"),
-		requiredItems: {
-			ticket40: 5,
-		},
-		enemyId: "Syndicate Nuclear Assault Team"
-	},
-	bossTicket3: {
-		name: "Investigate Occult Theory",
-		description: "On purchase, starts a fight with a random boss in this zone.",
-		icon: require("@/assets/art/shop/items/ticket50.png"),
-		requiredItems: {
-			ticket3: 5,
-		},
-		enemyId: "Bloodsworn Cultists"
-	},
-	bossTicket55: {
-		name: "Check Nanotrasen Reports",
-		description: "On purchase, starts a fight with a random boss in this zone.",
-		icon: require("@/assets/art/shop/items/ticket55.png"),
-		requiredItems: {
-			ticket55: 5,
-		},
-		enemyId: "Rogue Nanotrasen Team"
-	},
-	bossTicket60: {
-		name: "Schedule Celebrity Tour",
-		description: "On purchase, starts a fight with a random boss in this zone.",
-		icon: require("@/assets/art/shop/items/ticket60_anim.gif"),
-		requiredItems: {
-			ticket60: 5,
-		},
-		enemyId: "Wizard Federation 'Diplomats'"
-	},
+	
 	bossTicketReset: {
-		name: "Place bags of holdings inside each other",
-		description: "On purchase, starts a fight with this boss.",
+		name: "Fight Infinite-Timeline Doppelgänger",
+		description: "Are you sure you want to summon another to the same timeline?",
 		icon: require("@/assets/art/shop/items/tickettear.gif"),
 		requiredItems: {
-			bluespace: 8,
-			tomatoBluespace: 8,
-			slimeBluespace: 8
+			bluespace: 5,
 		},
-		enemyId: "Tear in the Fabric of Reality"
+		enemyId: "doppleganger"
 	},
-	/*
-	bossTicketDebug: {
-		name: "Fight Head of Cargo",
-		description: "On purchase, starts a fight head of cargo",
-		icon: require("@/assets/art/shop/items/ticket10.png"),
-		requiredItems: {
-			glass: 5,
-		},
-		enemyId: "rev1"
-	} */
 	rev1ticket: {
 		name: "Fight 'Head' of Cargo",
 		description: "Bother the 'Head' enough to lure him out of the safety of Cargo.",
@@ -565,7 +500,223 @@ const TICKETS = {
 			ticket10: 5
 		},
 		enemyId: "rev4"
-	}
+	},
+	sec1ticket: {
+		name: "Fight Corrupt Security Officer",
+		description: "Attempt breaking into the Sec lockers until you anger Shitsec.",
+		icon: require("@/assets/art/combat/enemies/boss/sec-officer.png"),
+		requiredItems: {
+			ticket1: 5
+		},
+		enemyId: "sec1"
+	},
+	sec2ticket: {
+		name: "Fight Meddling Detective",
+		description: "Track bloody footprints across a crime scene, putting the Detective into a blind rage.",
+		icon: require("@/assets/art/combat/enemies/boss/sec-detective.png"),
+		requiredItems: {
+			ticket1: 5
+		},
+		enemyId: "sec2"
+	},
+	sec3ticket: {
+		name: "Fight Gulag Warden",
+		description: "Breaking your friends out of Perma will incur 'His' wrath...",
+		icon: require("@/assets/art/combat/enemies/boss/sec-warden.png"),
+		requiredItems: {
+			ticket1: 5
+		},
+		enemyId: "sec3"
+	},
+	sec4ticket: {
+		name: "Fight Anime Inspired Head of Security",
+		description: "Make fun of how the HoS acts, making them validhunt YOU.",
+		icon: require("@/assets/art/combat/enemies/boss/sec-HOS.png"),
+		requiredItems: {
+			ticket1: 5
+		},
+		enemyId: "sec4"
+	},
+	lava1ticket: {
+		name: "Fight Ash Drake",
+		description: "Provoke the local wildlife with a blast from your kinetic accellerator.",
+		icon: require("@/assets/art/combat/enemies/boss/ash-drake.png"),
+		requiredItems: {
+			ticket2: 5
+		},
+		enemyId: "lava1"
+	},
+	lava2ticket: {
+		name: "Fight Bubblegum",
+		description: "Make fun of Bubblegum's name. That's it. Bubblegum is sensitive.",
+		icon: require("@/assets/art/combat/enemies/boss/bubblegum.gif"),
+		requiredItems: {
+			ticket2: 5
+		},
+		enemyId: "lava2"
+	},
+	lava3ticket: {
+		name: "Fight Blood Drunk Miner",
+		description: "Drunk is drunk, and on Space Station 13, drunk people are targets.",
+		icon: require("@/assets/art/combat/enemies/boss/miner.png"),
+		requiredItems: {
+			ticket2: 5
+		},
+		enemyId: "lava3"
+	},
+	lava4ticket: {
+		name: "Fight Legion",
+		description: "The Echoing Signal draws you in, but you came prepared... right?",
+		icon: require("@/assets/art/combat/enemies/boss/legion3_anim.gif"),
+		requiredItems: {
+			ticket2: 5
+		},
+		enemyId: "lava4"
+	},
+	nuke1ticket: {
+		name: "Fight Hasty Recruit",
+		description: "This nukie is certainly unprepared. Maybe they still have good loot.",
+		icon: require("@/assets/art/combat/enemies/boss/nukeop1.gif"),
+		requiredItems: {
+			ticket40: 5
+		},
+		enemyId: "nuke1"
+	},
+	nuke2ticket: {
+		name: "Fight Syndicate Assault Cyborg",
+		description: "DIRECTIVE[kill_All.humans] - syndicate",
+		icon: require("@/assets/art/combat/enemies/boss/nukeborg_anim.gif"),
+		requiredItems: {
+			ticket40: 5
+		},
+		enemyId: "nuke2"
+	},
+	nuke3ticket: {
+		name: "Fight 'Larry' Incendiary",
+		description: "Don't be fooled by the armor. He's got a flamethrower, and he's not afraid to use it on you.",
+		icon: require("@/assets/art/combat/enemies/boss/OPl6.png"),
+		requiredItems: {
+			ticket40: 5
+		},
+		enemyId: "nuke3"
+	},
+	nuke4ticket: {
+		name: "Fight Mechanized Assault Suit",
+		description: "And now, the finale.",
+		icon: require("@/assets/art/fabrication/mechmauler_anim.gif"),
+		requiredItems: {
+			ticket40: 5
+		},
+		enemyId: "nuke4"
+	},
+	cult1ticket: {
+		name: "Fight Proselytizing Cultist",
+		description: "New as they may be, they can still give you the Fist of Fury.",
+		icon: require("@/assets/art/combat/enemies/boss/cult1_anim.gif"),
+		requiredItems: {
+			ticket3: 5
+		},
+		enemyId: "cult1"
+	},
+	cult2ticket: {
+		name: "Fight Devout Neophyte",
+		description: "Try to steal the Neophyte's sword, making the Cult notice you.",
+		icon: require("@/assets/art/combat/enemies/boss/antag-cultist.png"),
+		requiredItems: {
+			ticket3: 5
+		},
+		enemyId: "cult2"
+	},
+	cult3ticket: {
+		name: "Fight Wraith Construct",
+		description: "They may be little creatures, but they're quite angry.",
+		icon: require("@/assets/art/combat/enemies/boss/cultwraith_anim.gif"),
+		requiredItems: {
+			ticket3: 5
+		},
+		enemyId: "cult3"
+	},
+	cult4ticket: {
+		name: "Fight Curate Of Blood",
+		description: "You dare challenge the one closest to Nar-Sie?",
+		icon: require("@/assets/art/combat/enemies/boss/cult4_anim.gif"),
+		requiredItems: {
+			ticket3: 5
+		},
+		enemyId: "cult4"
+	},
+	ert1ticket: {
+		name: "Fight Medical Officer Harrison",
+		description: "This doctor has broken his Oath. And he's looking right at you.",
+		icon: require("@/assets/art/combat/enemies/boss/ertmed.png"),
+		requiredItems: {
+			ticket55: 5
+		},
+		enemyId: "ert1"
+	},
+	ert2ticket: {
+		name: "Fight Engineer James",
+		description: "James here will weld you into a locker and kick you around if you don't show him who's boss.",
+		icon: require("@/assets/art/combat/enemies/boss/erteng.gif"),
+		requiredItems: {
+			ticket55: 5
+		},
+		enemyId: "ert2"
+	},
+	ert3ticket: {
+		name: "Fight Security Officer Lee",
+		description: "Shitcurity 9000. All your valid are belong to him.",
+		icon: require("@/assets/art/combat/enemies/boss/ertsec.png"),
+		requiredItems: {
+			ticket55: 5
+		},
+		enemyId: "ert3"
+	},
+	ert4ticket: {
+		name: "Fight Commander Woodworth",
+		description: "Remember 'Captain is Comdom'? Yeah, just apply that here.",
+		icon: require("@/assets/art/combat/enemies/boss/ertcom.gif"),
+		requiredItems: {
+			ticket55: 5
+		},
+		enemyId: "ert4"
+	},
+	wizard1ticket: {
+		name: "Fight Skeletal Thrall",
+		description: "This guy's all bones. Pound it to dust.",
+		icon: require("@/assets/art/combat/enemies/boss/wiz-skeleton.png"),
+		requiredItems: {
+			ticket60: 5
+		},
+		enemyId: "wizard1"
+	},
+	wizard2ticket: {
+		name: "Fight Magical Holoparasite",
+		description: "Purple Guy's looking good.",
+		icon: require("@/assets/art/combat/enemies/boss/wiz-stand_anim.gif"),
+		requiredItems: {
+			ticket60: 5
+		},
+		enemyId: "wizard2"
+	},
+	wizard3ticket: {
+		name: "Fight Wielder of True Light",
+		description: "The hammer is for show. So is the performance you're gonna put on clowning on this dunce.",
+		icon: require("@/assets/art/combat/enemies/boss/wiz-moth_anim.gif"),
+		requiredItems: {
+			ticket60: 5
+		},
+		enemyId: "wizard3"
+	},
+	wizard4ticket: {
+		name: "Fight THE Wizard",
+		description: "Who is this guy again?",
+		icon: require("@/assets/art/combat/enemies/boss/antag-wizard.png"),
+		requiredItems: {
+			ticket60: 5
+		},
+		enemyId: "wizard4"
+	},
 }
 
 export const PURCHASES = {

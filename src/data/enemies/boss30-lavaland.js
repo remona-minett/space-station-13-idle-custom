@@ -3,6 +3,10 @@ const BOSSES = {
 		name: "Ash Drake",
 		icon: require("@/assets/art/combat/enemies/boss/ash-drake.png"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket2: 5
+		},
 		stats: {
 			maxHealth: 1200,
 			attackSpeed: 3.2,
@@ -51,6 +55,10 @@ const BOSSES = {
 		name: "Bubblegum",
 		icon: require("@/assets/art/combat/enemies/boss/bubblegum.gif"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket2: 5
+		},
 		stats: {
 			maxHealth: 1200,
 			attackSpeed: 2.1,
@@ -99,6 +107,10 @@ const BOSSES = {
 		name: "Blood Drunk Miner",
 		icon: require("@/assets/art/combat/enemies/boss/miner.png"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket2: 5
+		},
 		stats: {
 			maxHealth: 1200,
 			attackSpeed: 6,
@@ -148,6 +160,10 @@ const BOSSES = {
 		name: "Legion",
 		icon: require("@/assets/art/combat/enemies/boss/legion3_anim.gif"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket2: 5
+		},
 		stats: {
 			maxHealth: 1200,
 			attackSpeed: 3.4,

@@ -3,6 +3,10 @@ const BOSSES = {
 		name: "Infinite-Timeline Doppelgänger",
 		icon: require("@/assets/art/combat/enemies/boss/doppleganger.png"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			bluespace: 5,
+		},
 		stats: {
 			maxHealth: 445,
 			attackSpeed: 8.9,

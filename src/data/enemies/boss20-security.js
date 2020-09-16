@@ -3,6 +3,10 @@ const BOSSES = {
 		name: "Corrupt Security Officer",
 		icon: require("@/assets/art/combat/enemies/boss/sec-officer.png"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket1: 5
+		},
 		stats: {
 			maxHealth: 700,
 			attackSpeed: 2.0,
@@ -51,6 +55,10 @@ const BOSSES = {
 		name: "Meddling Detective",
 		icon: require("@/assets/art/combat/enemies/boss/sec-detective.png"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket1: 5
+		},
 		stats: {
 			maxHealth: 700,
 			attackSpeed: 2.1,
@@ -99,6 +107,10 @@ const BOSSES = {
 		name: "Gulag Warden",
 		icon: require("@/assets/art/combat/enemies/boss/sec-warden.png"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket1: 5
+		},
 		stats: {
 			maxHealth: 700,
 			attackSpeed: 5,
@@ -147,6 +159,10 @@ const BOSSES = {
 		name: "Anime Inspired Head Of Security",
 		icon: require("@/assets/art/combat/enemies/boss/sec-HOS.png"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket1: 5
+		},
 		stats: {
 			maxHealth: 700,
 			attackSpeed: 2.4,

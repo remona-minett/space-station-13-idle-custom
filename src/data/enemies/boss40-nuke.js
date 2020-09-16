@@ -3,6 +3,10 @@ const BOSSES = {
 		name: "Hasty Recruit",
 		icon: require("@/assets/art/combat/enemies/boss/nukeop1.gif"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket40: 5
+		},
 		stats: {
 			maxHealth: 1800,
 			attackSpeed: 1.7,
@@ -51,6 +55,10 @@ const BOSSES = {
 		name: "Syndicate Assault Cyborg",
 		icon: require("@/assets/art/combat/enemies/boss/nukeborg_anim.gif"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket40: 5
+		},
 		stats: {
 			maxHealth: 1800,
 			attackSpeed: 2.1,
@@ -99,6 +107,10 @@ const BOSSES = {
 		name: "'Larry' Incendiary",
 		icon: require("@/assets/art/combat/enemies/boss/OPl6.png"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket40: 5
+		},
 		stats: {
 			maxHealth: 1800,
 			attackSpeed: .3,
@@ -148,6 +160,10 @@ const BOSSES = {
 		name: "Mechanized Assault Suit",
 		icon: require("@/assets/art/fabrication/mechmauler_anim.gif"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket40: 5
+		},
 		stats: {
 			maxHealth: 3000,
 			attackSpeed: 3.4,

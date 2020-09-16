@@ -3,6 +3,10 @@ const BOSSES = {
 		name: "Proselytizing Cultist",
 		icon: require("@/assets/art/combat/enemies/boss/cult1_anim.gif"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket3: 5
+		},
 		stats: {
 			maxHealth: 3000,
 			attackSpeed: 2.6,
@@ -51,6 +55,9 @@ const BOSSES = {
 		name: "Devout Neophyte",
 		icon: require("@/assets/art/combat/enemies/boss/antag-cultist.png"),
 		validhuntable: false,
+		fightCost: {
+			ticket3: 5
+		},
 		stats: {
 			maxHealth: 3000,
 			attackSpeed: 2.9,
@@ -99,6 +106,9 @@ const BOSSES = {
 		name: "Wraith Construct",
 		icon: require("@/assets/art/combat/enemies/boss/cultwraith_anim.gif"),
 		validhuntable: false,
+		fightCost: {
+			ticket3: 5
+		},
 		stats: {
 			maxHealth: 3000,
 			attackSpeed: 8,
@@ -148,6 +158,9 @@ const BOSSES = {
 		name: "Curate Of Blood",
 		icon: require("@/assets/art/combat/enemies/boss/cult4_anim.gif"),
 		validhuntable: false,
+		fightCost: {
+			ticket3: 5
+		},
 		stats: {
 			maxHealth: 3000,
 			attackSpeed: 1.5,

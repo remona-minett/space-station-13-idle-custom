@@ -3,6 +3,9 @@ const BOSSES = {
 		name: "Medical Officer Harrison",
 		icon: require("@/assets/art/combat/enemies/boss/ertmed.png"),
 		validhuntable: false,
+		fightCost: {
+			ticket55: 5
+		},
 		stats: {
 			maxHealth: 3000,
 			attackSpeed: 2.6,
@@ -51,6 +54,9 @@ const BOSSES = {
 		name: "Engineer James",
 		icon: require("@/assets/art/combat/enemies/boss/erteng.gif"),
 		validhuntable: false,
+		fightCost: {
+			ticket55: 5
+		},
 		stats: {
 			maxHealth: 3000,
 			attackSpeed: 2.9,
@@ -99,6 +105,9 @@ const BOSSES = {
 		name: "Security Officer Lee",
 		icon: require("@/assets/art/combat/enemies/boss/ertsec.png"),
 		validhuntable: false,
+		fightCost: {
+			ticket55: 5
+		},
 		stats: {
 			maxHealth: 3000,
 			attackSpeed: 8.5,
@@ -147,6 +156,9 @@ const BOSSES = {
 		name: "Commander Woodworth",
 		icon: require("@/assets/art/combat/enemies/boss/ertcom.gif"),
 		validhuntable: false,
+		fightCost: {
+			ticket55: 5
+		},
 		stats: {
 			maxHealth: 3000,
 			attackSpeed: 1,

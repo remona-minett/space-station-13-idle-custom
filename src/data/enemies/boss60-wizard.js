@@ -3,6 +3,10 @@ const BOSSES = {
 		name: "Skeletal Thrall",
 		icon: require("@/assets/art/combat/enemies/boss/wiz-skeleton.png"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket60: 5
+		},
 		stats: {
 			maxHealth: 3000,
 			attackSpeed: 2.6,
@@ -51,6 +55,10 @@ const BOSSES = {
 		name: "Magical Holoparasite",
 		icon: require("@/assets/art/combat/enemies/boss/wiz-stand_anim.gif"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket60: 5
+		},
 		stats: {
 			maxHealth: 3000,
 			attackSpeed: 0.9,
@@ -99,6 +107,10 @@ const BOSSES = {
 		name: "Wielder of True Light",
 		icon: require("@/assets/art/combat/enemies/boss/wiz-moth_anim.gif"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket60: 5
+		},
 		stats: {
 			maxHealth: 3000,
 			attackSpeed: 9,
@@ -147,6 +159,10 @@ const BOSSES = {
 		name: "THE Wizard",
 		icon: require("@/assets/art/combat/enemies/boss/antag-wizard.png"),
 		validhuntable: false,
+		boss: true,
+		fightCost: {
+			ticket60: 5
+		},
 		stats: {
 			maxHealth: 3000,
 			attackSpeed: 2.1,
