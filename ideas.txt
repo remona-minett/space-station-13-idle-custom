@@ -1,0 +1,56 @@
+Unique, possibly themed loot in each area. Different quality drops (epic/legendary for non final boss and legendary/unique for final boss of area) would relieve load and make duplicating the item easier.
+ 
+Idea: Give each miniboss one drop, of Epic, Epic, Legendary, each. The final boss gets a Legendary / Unique variation item. harder bosses - better items.
+
+Not every boss's "legendary" or "unique" has to be OP, especially at lower levels (worker strike to nuke team, etc etc), as it's just a legendary "quality" item, and is better. Can also just make better versions of existing items.
+
+
+
+General Ideas:
+- captain’s laser gun could use a facelift, it’s very unique
+- pda pocket item giving different effects, noconsume
+
+Worker Strike Ideas:
+- Stunprod legendary/unique, final boss ? (greytider) stunprod gives burn dmg, lowered eva, more power, require cells maybe? requires: energized, affect dmg somewhat keeping it useful
+- head of cargo insuls? epic quality offer better burn res?
+- ncmo's blue labcoat epic item?
+- ipcrd's teleport armor legendary item? high eva, lowered res?
+
+Brutal Security Ideas:
+- Corrupt Security Officer:
+- Meddling Detective:
+- Gulag Warden:
+- Anime Inspired Head Of Security:
+
+Primordial Planet:
+- Ash Drake:
+- Bubblegum:
+- Blood Drunk Miner:
+- Legion:
+
+Syndicate Nuclear Assault Team:
+- Hasty Recruit:
+- Syndicate Assault Cyborg:
+- 'Larry' Incendiary:
+- Mechanized Assault Suit:
+
+Bloodsworn Cultists:
+- Proselytizing Cultist:
+- Devout Neophyte:
+- Wraith Construct:
+- Curate Of Blood:
+
+Rogue Nanotrasen Team:
+- Medical Officer Harrison:
+- Engineer James:
+- Security Officer Lee:
+- Commander Woodworth:
+
+Wizard Federation 'Diplomats':
+- Skeletal Thrall:
+- Magical Holoparasite:
+- Wielder of True Light:
+- THE Wizard:
+
+Tear in the Fabric of Reality:
+- Doppelgänger: probably no changes. Don't need to make it grindable. Should make entry cost expensive.

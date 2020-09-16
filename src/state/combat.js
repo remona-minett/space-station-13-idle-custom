@@ -166,7 +166,7 @@ const combat = {
 					count = count ? count : 0;
 					if (count < requiredCount) { 
 						commit("_setTargetEnemy", null); 
-						EventBus.$emit("toast", { text: `Insufficient tickets!`, duration: 2500 });
+						EventBus.$emit("toast", { text: `Not enough of required item!`, duration: 3000 });
 						return false; 
 					}
 				}
