@@ -359,6 +359,7 @@ const SLIMES = {
 		sellPrice: 1000,
 		restrictions: ["mech"],
 		rarity: "uncommon",
+		nocomplete: true,
 		icon: require("@/assets/art/mech/mechRepair.png"),
 		tier: 2,
 		stats: {
@@ -372,6 +373,7 @@ const SLIMES = {
 		sellPrice: 36300,
 		restrictions: ["mech"],
 		rarity: "rare",
+		nocomplete: true,
 		icon: require("@/assets/art/mech/mechThrusters.png"),
 		tier: 3,
 		stats: {
