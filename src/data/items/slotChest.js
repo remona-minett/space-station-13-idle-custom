@@ -350,6 +350,26 @@ const SPECIALARMOR = {
 			evasion: 25
 		}
 	},
+	devGod: {
+		name: "Plot Armor",
+		equipmentSlot: "chest",
+		sellPrice: 999999,
+		icon: require("@/assets/art/combat/enemies/missing.png"),
+		overlay: require("@/assets/art/combat/enemies/missing.png"),
+		overlayAppearInBack: true,
+		overlayBlurry: true,
+		nocomplete: true,
+		stats: {
+			protection: 100,
+			precision: 500,
+			power: 500,
+			command: 150,
+			luck: 95
+		},
+		requires: {
+			evasion: 1
+		}
+	}
 }
 
 const LINGAIM = {
