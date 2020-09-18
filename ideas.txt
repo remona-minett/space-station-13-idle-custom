@@ -4,7 +4,7 @@ Idea: Give each miniboss one drop, of Epic, Epic, Legendary, each. The final bos
 
 Not every boss's "legendary" or "unique" has to be OP, especially at lower levels (worker strike to nuke team, etc etc), as it's just a legendary "quality" item, and is better. Can also just make better versions of existing items.
 
- Color corner of item sprite (not overlay) to signify quality? Find rgb from css color. possibly make it a small symbol. this might not work b/c 32x32. a small square will work.
+Color corner of item sprite (not overlay) to signify quality? Find rgb from css color. possibly make it a small symbol. this might not work b/c 32x32. a small square will work.
 
 General Ideas:
 - captain’s laser gun could use a facelift, it’s very unique
