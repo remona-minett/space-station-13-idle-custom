@@ -10,11 +10,11 @@
           @click="eat"
         >
           <div v-if="food">
-            <span>({{foodCount}})</span>
+            <span class="dark-mode stats">({{foodCount}})</span>
             <img class="food-icon" :src="food.icon" />
-            <span>+{{food.healAmount}} HP</span>
+            <span class="dark-mode stats">+{{food.healAmount}} HP</span>
           </div>
-          <span v-else>No food</span>
+          <span v-else class="dark-mode greytext">No food</span>
         </button>
 
         <item-popover v-if="food" :target="id" placement="left" :itemId="foodId" />
@@ -121,4 +121,22 @@ export default {
 .no-eat {
   cursor: not-allowed !important;
 }
+
+.stats,
+.title,
+.plaintext,
+.greytext /* greytext is it's darkmode color - just needs a default here. */ {
+  color:black;
+}
+
+.dark-mode .stats,
+.dark-mode .title,
+.dark-mode .plaintext {
+  color:white;
+}
+
+.dark-mode .greytext {
+  color:rgb(177, 177, 177);
+}
+
 </style>

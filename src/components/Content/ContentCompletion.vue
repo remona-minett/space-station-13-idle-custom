@@ -43,8 +43,8 @@
                 :customClass="$store.getters['settings/darkModeClass']"
               >
                 <div class="d-flex flex-column align-items-center">
-                  <h6>{{entry[1].name}}</h6>
-                  <span>Found: {{getItem(entry[0])}}</span>
+                  <h6 class="dark-mode stats">{{entry[1].name}}</h6>
+                  <span class="dark-mode greytext">Found: {{getItem(entry[0])}}</span>
                 </div>
               </b-popover>
             </div>
@@ -80,8 +80,8 @@
                 :customClass="$store.getters['settings/darkModeClass']"
               >
                 <div class="d-flex flex-column align-items-center">
-                  <h6>{{entry[1].name}}</h6>
-                  <span>Killed: {{getEnemy(entry[0])}}</span>
+                  <h6 class="dark-mode stats">{{entry[1].name}}</h6>
+                  <span class="dark-mode stats">Killed: {{getEnemy(entry[0])}}</span>
                 </div>
               </b-popover>
             </div>
@@ -235,6 +235,23 @@ export default {
   .enemy {
     width: 36px;
   }
+}
+
+.stats,
+.title,
+.plaintext,
+.greytext /* greytext is it's darkmode color - just needs a default here. */ {
+  color:black;
+}
+
+.dark-mode .stats,
+.dark-mode .title,
+.dark-mode .plaintext {
+  color:white;
+}
+
+.dark-mode .greytext {
+  color:rgb(177, 177, 177);
 }
 
 .hidden {

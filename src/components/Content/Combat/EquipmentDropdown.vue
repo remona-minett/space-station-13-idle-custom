@@ -9,7 +9,7 @@
         :itemId="itemId"
       />
       <button v-if="canUnequip" class="btn btn-outline-danger" @click="unequip">UNEQUIP</button>
-      <span v-if="!currentItemId && validItems.length == 0">No {{equipmentSlot}} items available.</span>
+      <span v-if="!currentItemId && validItems.length == 0" class="dark-mode stats">No {{equipmentSlot}} items available.</span>
     </div>
   </b-popover>
 </template>
@@ -43,9 +43,28 @@ export default {
 };
 </script>
 <style scoped>
+
 .title {
   font-size: 12px;
   font-weight: bold;
   color: rgb(152, 156, 165);
 }
+
+.stats,
+.title,
+.plaintext,
+.greytext /* greytext is it's darkmode color - just needs a default here. */ {
+  color:black;
+}
+
+.dark-mode .stats,
+.dark-mode .title,
+.dark-mode .plaintext {
+  color:white;
+}
+
+.dark-mode .greytext {
+  color:rgb(177, 177, 177);
+}
+
 </style>

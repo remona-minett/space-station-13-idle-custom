@@ -39,16 +39,16 @@
       <span
         v-for="(restriction, index) in restrictions"
         :key="'restriction'+index"
-        class="warning-bubble mt-1"
+        class="dark-mode warning-bubble mt-1"
       >Restriction: {{restriction.toUpperCase()}}</span>
       <span class="description mt-1" v-if="item.description">{{item.description}}</span>
       <span class="potion-charges mt-1" v-if="item.potionCharges">Charges: {{item.potionCharges}}</span>
       <span
-        class="description mt-1"
+        class="dark-mode description mt-1"
         v-if="item.stats && item.stats.moveTime != undefined"
       >{{item.stats.moveTime > 0 ? `+${item.stats.moveTime}` : item.stats.moveTime}} move time</span>
       <span
-        class="description mt-1"
+        class="dark-mode description mt-1"
         v-if="item.stats && item.stats.attackSpeed != undefined"
       >Attack Speed: {{item.stats.attackSpeed}}s</span>
       <span

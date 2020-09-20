@@ -57,7 +57,7 @@
         :icon="require('@/assets/art/combat/luck.png')"
         :value="fixedStats.luck"
         :showPercent="true"
-      /> <!-- Remove this later. todo, removeme-->
+      /> <!-- Remove this later. todo, removeme -->
       <div
         v-if="stats.damageType"
         :id="id+'-damage-type'"
@@ -75,7 +75,7 @@
       delay="0"
       :customClass="`${$store.getters['settings/darkModeClass']} no-pointer-events`"
     >
-      <div class="d-flex flex-column align-items-center">
+      <div class="d-flex flex-column align-items-center dark-mode stats">
         <h6>Damage Type: {{stats.damageType.toUpperCase()}}</h6>
         <span>Damage dealt will be inflicted as {{stats.damageType}} damage</span>
       </div>
@@ -121,6 +121,23 @@ export default {
   min-width: 15px;
   width: 15px;
   height: 15px;
+}
+
+.stats,
+.title,
+.plaintext,
+.greytext /* greytext is it's darkmode color - just needs a default here. */ {
+  color:black;
+}
+
+.dark-mode .stats,
+.dark-mode .title,
+.dark-mode .plaintext {
+  color:white;
+}
+
+.dark-mode .greytext {
+  color:rgb(177, 177, 177);
 }
 
 .stat-detail,

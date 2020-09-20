@@ -53,13 +53,13 @@
       <stat-explain-hit-chance :target="`${mobType}-stat-hit-chance`" :mobType="mobType" />
     </div>
 
-    <div v-if="mobType == 'player' && companion" class="w-100">
+    <div v-if="mobType == 'player' && companion" class="w-100 dark-mode stats">
       <div class="stat" :id="`${mobType}-stat-flee-chance`">
         <img :src="require('@/assets/art/combat/command.png')" />
         <span class="stat-desc">Flee Chance:</span>
         <span>{{+(fleeChance*100).toFixed(1)}}%</span>
       </div>
-      <stat-explain-flee-chance :target="`${mobType}-stat-flee-chance`" :mobType="mobType" />
+      <stat-explain-flee-chance class="dark-mode stats" :target="`${mobType}-stat-flee-chance`" :mobType="mobType" />
     </div>
 
     <stats-panel class="mt-2" :stats="stats" :showAll="true" />
@@ -262,6 +262,23 @@ export default {
   margin-right: 0.4rem;
   margin-left: 0.25rem;
   font-weight: normal;
+}
+
+.stats,
+.title,
+.plaintext,
+.greytext /* greytext is it's darkmode color - just needs a default here. */ {
+  color:black;
+}
+
+.dark-mode .stats,
+.dark-mode .title,
+.dark-mode .plaintext {
+  color:white;
+}
+
+.dark-mode .greytext {
+  color:rgb(177, 177, 177);
 }
 
 .dark-mode .stat {
