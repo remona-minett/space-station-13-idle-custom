@@ -282,6 +282,7 @@ const SLIMES = {
 		name: "Elusive Positronic Upgrade",
 		restrictions: ["mech"],
 		sellPrice: 5757,
+		nocomplete: true,
 		icon: require("@/assets/art/combat/items/positronic_anim.gif"),
 		tier: 1,
 		stats: {

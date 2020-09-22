@@ -652,6 +652,56 @@ const GENERGY = {
 			rangedPower: 50,
 			command: 30
 		}
+	},
+	mechBurn1: {
+		name: "Exosuit Plasma Cutter",
+		sellPrice: 4700,
+		equipmentSlot: "hand",
+		restrictions: ["mech"],
+		rarity: "common",
+		icon: require("@/assets/art/mech/mechPlascutter.png"),
+		stats: {
+			attackSpeed: 3,
+			power: 4,
+			precision: 2
+		},
+		requires: {
+			fabrication: 12
+		}
+	},
+	mechBurn2: {
+		name: "Exosuit Ion Rifle",
+		sellPrice: 15600,
+		equipmentSlot: "hand",
+		restrictions: ["mech"],
+		rarity: "uncommon",
+		icon: require("@/assets/art/mech/mechIonRifle.png"),
+		stats: {
+			attackSpeed: 7,
+			power: 7,
+			precision: 4 
+		},
+		requires: {
+			fabrication: 22,
+			precision: 5
+		}
+	},
+	mechBurn3: {
+		name: "Exosuit Taser",
+		sellPrice: 22000,
+		equipmentSlot: "hand",
+		restrictions: ["mech"],
+		rarity: "rare",
+		icon: require("@/assets/art/mech/mechTaser.png"),
+		stats: {
+			attackSpeed: 3,
+			power: 13,
+			evasion: 5
+		},
+		requires: {
+			fabrication: 32,
+			precision: 12
+		}
 	}
 }
 
@@ -917,7 +967,6 @@ const GBULLET = {
 		equipmentSlot: "hand",
 		restrictions: ["mech"],
 		rarity: "common",
-		nocomplete: true,
 		icon: require("@/assets/art/mech/mechMousetrapMortar.png"),
 		// overlay: ? - being excluded because it would look very weird. can probably put it on the ground?
 		stats: {
@@ -934,14 +983,14 @@ const GBULLET = {
 		equipmentSlot: "hand",
 		restrictions: ["mech"],
 		rarity: "common",
-		nocomplete: true,
 		icon: require("@/assets/art/mech/mechGrenadeLauncher.png"),
 		stats: {
 			attackSpeed: 6,
 			power: 6
 		},
 		requires: {
-			fabrication: 19
+			fabrication: 19,
+			precision: 5
 		}
 	},
 	mechBrute3: {
@@ -950,15 +999,14 @@ const GBULLET = {
 		equipmentSlot: "hand",
 		restrictions: ["mech"],
 		rarity: "uncommon",
-		nocomplete: true,
 		icon: require("@/assets/art/mech/mechShotgun.png"),
 		stats: {
-			attackSpeed: 6,
+			attackSpeed: 5,
 			power: 10
 		},
 		requires: {
 			fabrication: 25,
-			precision: 5
+			precision: 10
 		}
 	},
 	mechBrute4: {
@@ -967,15 +1015,14 @@ const GBULLET = {
 		equipmentSlot: "hand",
 		restrictions: ["mech"],
 		rarity: "rare",
-		nocomplete: true,
 		icon: require("@/assets/art/mech/mechAssaultRifle.png"),
 		stats: {
-			attackSpeed: 2,
+			attackSpeed: 1.5,
 			power: 15
 		},
 		requires: {
 			fabrication: 38,
-			precision: 25
+			precision: 22
 		}
 	},
 	mechBrute5: {
@@ -984,7 +1031,6 @@ const GBULLET = {
 		equipmentSlot: "hand",
 		restrictions: ["mech"],
 		rarity: "epic",
-		nocomplete: true,
 		icon: require("@/assets/art/mech/mechSniperRifle.png"),
 		stats: {
 			evasion: -10,
@@ -994,6 +1040,24 @@ const GBULLET = {
 		requires: {
 			fabrication: 50,
 			precision: 40
+		}
+	},
+	mechSpecialGag: {
+		name: "Exosuit Boxing Glove",
+		sellPrice: 15000,
+		equipmentSlot: "hand",
+		restrictions: ["mech"],
+		rarity: "legendary",
+		nocomplete: true,
+		icon: require("@/assets/art/mech/mechBoxingGlove.png"),
+		stats: {
+			evasion: 25,
+			attackSpeed: 5,
+			power: -100,
+			luck: -100
+		},
+		requires: {
+			fabrication: 50
 		}
 	}
 }

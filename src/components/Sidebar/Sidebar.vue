@@ -6,7 +6,7 @@
         <img class="no-pixel" src="@/assets/art/misc/logo.png" alt />
         <span>CS13 Idle</span>
       </div>
-      <p class="items-header">{{version}} Beta</p>
+      <p class="items-header">{{version}}</p>
 
       <sidebar-item id="shop" text="Cargo" :icon="require('@/assets/art/sidebar/cargo.png')">
         <div>
@@ -40,7 +40,7 @@
 
       <div class="items-header flex-row align-items-center justify-content-between">
         <span>Combat</span>
-        <span :style="healthStyle">({{playerHealth}}/{{playerMaxHealth}})</span>
+        <span :class="healthClass">({{playerHealth}}/{{playerMaxHealth}})</span>
       </div>
       <sidebar-item
         v-for="job in combatJobs"
@@ -121,10 +121,17 @@ export default {
     playerMaxHealth() {
       return this.$store.getters["playerMob/stats"].maxHealth;
     },
-    healthStyle() {
-      let healthPercentage = this.playerHealth / this.playerMaxHealth;
-      let healthRGB = Math.floor(healthPercentage * 120);
-      return "color: hsl("+healthRGB+",100%,40%)";
+    healthClass() {
+      if (this.playerMaxHealth == this.playerHealth) {
+        return "health-full"
+      }
+      else if (parseInt(this.playerMaxHealth) / 2 < this.playerHealth) {
+        return "health-damaged"
+      }
+      else if (parseInt(this.playerMaxHealth) / 4 < this.playerHealth) {
+        return "health-severe"
+      }
+      else return "health-critical"
     },
     bankItemIds() {
       return this.$store.getters["inventory/bankItemIds"];
@@ -153,8 +160,6 @@ export default {
       }
     },
     checkJobLocked(job) {
-			if (this.$store.getters["cheats/unlockAllJobs"]) return false;
-			if (this.$store.getters[job.id + "/xp"]) return false;
       return this.$store.getters[job.id + "/locked"];
     }
   }
@@ -226,6 +231,19 @@ export default {
   text-transform: uppercase;
   padding: 1rem 1rem 0.25rem 1rem;
   font-weight: bold;
+}
+
+.health-critical {
+  color: red;
+}
+.health-severe {
+  color: orange
+}
+.health-damaged {
+  color: rgb(197, 197, 0);
+}
+.health-full {
+  color: rgb(0, 211, 0);
 }
 
 a:hover,
