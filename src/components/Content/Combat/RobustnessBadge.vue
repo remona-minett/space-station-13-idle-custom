@@ -8,7 +8,7 @@
       delay="50"
       :customClass="`${$store.getters['settings/darkModeClass']} no-pointer-events`"
     >
-      <div class="d-flex flex-column align-items-center">
+      <div class="d-flex flex-column align-items-center dark-mode  plaintext">
         <span class="mb-1 description">Attack Speed: {{getBasedStats.attackSpeed}}</span>
         <stats-panel :stats="getBasedStats" />
       </div>
@@ -53,5 +53,18 @@ export default {
   font-size: 13px;
   border-radius: 6px;
   padding: 4px 7px;
+}
+
+.stats,
+.title,
+.plaintext,
+.greytext /* greytext is it's darkmode color - just needs a default here. */ {
+  color:black;
+}
+
+.dark-mode .stats,
+.dark-mode .title,
+.dark-mode .plaintext {
+  color:white;
 }
 </style>

@@ -655,7 +655,7 @@ const GENERGY = {
 	},
 	mechBurn1: {
 		name: "Exosuit Plasma Cutter",
-		sellPrice: 4700,
+		sellPrice: 5700,
 		equipmentSlot: "hand",
 		restrictions: ["mech"],
 		rarity: "common",
